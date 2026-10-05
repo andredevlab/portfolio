@@ -18,6 +18,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 1.25rem;
 }
 
 body {
@@ -191,10 +192,15 @@ h4 {
 }
 
 .quick-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem;
-  margin: 1rem 0;
+  position: fixed;
+  top: 50%;
+  left: max(1rem, calc((100vw - var(--max)) / 2 - 9rem));
+  z-index: 20;
+  display: grid;
+  gap: 0.45rem;
+  width: 8rem;
+  margin: 0;
+  transform: translateY(-50%);
 }
 
 .quick-nav a,
@@ -513,6 +519,26 @@ li + li {
 }
 
 @media (max-width: 920px) {
+  html {
+    scroll-padding-top: 5.25rem;
+  }
+
+  .quick-nav {
+    position: sticky;
+    top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    margin: 1rem 0;
+    padding: 0.35rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(246, 247, 249, 0.92);
+    box-shadow: 0 14px 34px rgba(23, 32, 42, 0.08);
+    transform: none;
+    backdrop-filter: blur(12px);
+  }
+
   .resume-header,
   .portfolio-highlight,
   .profile-section,
