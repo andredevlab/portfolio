@@ -99,23 +99,34 @@
                 <a href="https://play.google.com/store/apps/details?id=br.com.trio.android"><span class="store-icon store-icon-play" aria-hidden="true"></span>Get it on Google Play</a>
               </div>
             </div>
-            <div class="media-strip">
-              <figure>
-                <img src="assets/media/trio-widget-databases.gif" alt="Trio widgets showing different QA and beta data.">
-                <figcaption>Widget data</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/trio-lock-widgets.gif" alt="Trio lock screen and home screen widgets for pending approvals.">
-                <figcaption>Lock widgets</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/trio-totp-login.gif" alt="Trio email, password, and TOTP authentication flow.">
-                <figcaption>TOTP</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/trio-biometrics.gif" alt="Trio biometric authentication with Secure Enclave.">
-                <figcaption>Biometrics</figcaption>
-              </figure>
+            <div class="focus-carousel" data-focus-carousel aria-label="Trio visual walkthrough">
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous Trio GIF">‹</button>
+              <div class="carousel-stage">
+                <img class="carousel-side carousel-side-left" data-carousel-prev-image src="assets/media/trio-biometrics.gif" alt="" aria-hidden="true">
+                <figure class="carousel-active-card">
+                  <img data-carousel-main src="assets/media/trio-widget-databases.gif" alt="Trio widgets showing different QA and beta data.">
+                  <figcaption>
+                    <strong data-carousel-title>Widget data</strong>
+                    <span data-carousel-description>Different data contexts across QA and beta widgets.</span>
+                  </figcaption>
+                </figure>
+                <img class="carousel-side carousel-side-right" data-carousel-next-image src="assets/media/trio-lock-widgets.gif" alt="" aria-hidden="true">
+              </div>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next Trio GIF">›</button>
+              <div class="carousel-dots" aria-label="Choose Trio GIF">
+                <button type="button" data-carousel-dot="0" aria-label="Show Widget data"></button>
+                <button type="button" data-carousel-dot="1" aria-label="Show Lock widgets"></button>
+                <button type="button" data-carousel-dot="2" aria-label="Show TOTP"></button>
+                <button type="button" data-carousel-dot="3" aria-label="Show Biometrics"></button>
+              </div>
+              <script type="application/json" data-carousel-items>
+                [
+                  {"src":"assets/media/trio-widget-databases.gif","title":"Widget data","description":"Different data contexts across QA and beta widgets.","alt":"Trio widgets showing different QA and beta data."},
+                  {"src":"assets/media/trio-lock-widgets.gif","title":"Lock widgets","description":"Pending approvals visible from Lock Screen and Home Screen widgets.","alt":"Trio lock screen and home screen widgets for pending approvals."},
+                  {"src":"assets/media/trio-totp-login.gif","title":"TOTP authentication","description":"Email, password, and deterministic demo-code flow.","alt":"Trio email, password, and TOTP authentication flow."},
+                  {"src":"assets/media/trio-biometrics.gif","title":"Biometrics","description":"Biometric authentication experience for secure app access.","alt":"Trio biometric authentication with Secure Enclave."}
+                ]
+              </script>
             </div>
           </article>
 
@@ -167,39 +178,42 @@
                 <a href="https://apps.apple.com/br/app/flipaclip-2d-animation-maker/id1101848914?l=en-GB"><span class="store-icon store-icon-appstore" aria-hidden="true"></span>View on the App Store</a>
               </div>
             </div>
-            <div class="media-strip">
-              <figure>
-                <img src="assets/media/flipaclip-color-picker-ipad.gif" alt="FlipaClip color picker on iPad.">
-                <figcaption>iPad picker</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-color-picker-iphone.gif" alt="FlipaClip color picker on iPhone.">
-                <figcaption>iPhone picker</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-magic-cut.gif" alt="FlipaClip Magic Cut AI image segmentation.">
-                <figcaption>Magic Cut</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-voice-cloning-1.gif" alt="FlipaClip voice cloning interface.">
-                <figcaption>Voice AI</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-voice-cloning-2.gif" alt="FlipaClip voice cloning playback details.">
-                <figcaption>Playback</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-rewarded-ads-1.gif" alt="FlipaClip rewarded ads flow.">
-                <figcaption>Ads</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-rewarded-ads-2.gif" alt="FlipaClip ad integration.">
-                <figcaption>Ad surface</figcaption>
-              </figure>
-              <figure>
-                <img src="assets/media/flipaclip-paywall.gif" alt="FlipaClip Purchasely paywall.">
-                <figcaption>Paywall</figcaption>
-              </figure>
+            <div class="focus-carousel" data-focus-carousel aria-label="FlipaClip visual walkthrough">
+              <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous FlipaClip GIF">‹</button>
+              <div class="carousel-stage">
+                <img class="carousel-side carousel-side-left" data-carousel-prev-image src="assets/media/flipaclip-paywall.gif" alt="" aria-hidden="true">
+                <figure class="carousel-active-card">
+                  <img data-carousel-main src="assets/media/flipaclip-color-picker-ipad.gif" alt="FlipaClip color picker on iPad.">
+                  <figcaption>
+                    <strong data-carousel-title>iPad color picker</strong>
+                    <span data-carousel-description>Popover presentation adapted for a precise iPad drawing workflow.</span>
+                  </figcaption>
+                </figure>
+                <img class="carousel-side carousel-side-right" data-carousel-next-image src="assets/media/flipaclip-color-picker-iphone.gif" alt="" aria-hidden="true">
+              </div>
+              <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next FlipaClip GIF">›</button>
+              <div class="carousel-dots" aria-label="Choose FlipaClip GIF">
+                <button type="button" data-carousel-dot="0" aria-label="Show iPad color picker"></button>
+                <button type="button" data-carousel-dot="1" aria-label="Show iPhone color picker"></button>
+                <button type="button" data-carousel-dot="2" aria-label="Show Magic Cut"></button>
+                <button type="button" data-carousel-dot="3" aria-label="Show Voice AI"></button>
+                <button type="button" data-carousel-dot="4" aria-label="Show voice playback"></button>
+                <button type="button" data-carousel-dot="5" aria-label="Show rewarded ads"></button>
+                <button type="button" data-carousel-dot="6" aria-label="Show ad surface"></button>
+                <button type="button" data-carousel-dot="7" aria-label="Show paywall"></button>
+              </div>
+              <script type="application/json" data-carousel-items>
+                [
+                  {"src":"assets/media/flipaclip-color-picker-ipad.gif","title":"iPad color picker","description":"Popover presentation adapted for a precise iPad drawing workflow.","alt":"FlipaClip color picker on iPad."},
+                  {"src":"assets/media/flipaclip-color-picker-iphone.gif","title":"iPhone color picker","description":"Fullscreen presentation tuned for smaller screens and touch-first editing.","alt":"FlipaClip color picker on iPhone."},
+                  {"src":"assets/media/flipaclip-magic-cut.gif","title":"Magic Cut","description":"AI image segmentation flow integrated into the creative editing experience.","alt":"FlipaClip Magic Cut AI image segmentation."},
+                  {"src":"assets/media/flipaclip-voice-cloning-1.gif","title":"Voice AI","description":"Voice cloning interface with character-focused audio generation details.","alt":"FlipaClip voice cloning interface."},
+                  {"src":"assets/media/flipaclip-voice-cloning-2.gif","title":"Voice playback","description":"Playback and audio state details for generated character voices.","alt":"FlipaClip voice cloning playback details."},
+                  {"src":"assets/media/flipaclip-rewarded-ads-1.gif","title":"Rewarded ads","description":"Rewarded ad flow connected to product surfaces and user incentives.","alt":"FlipaClip rewarded ads flow."},
+                  {"src":"assets/media/flipaclip-rewarded-ads-2.gif","title":"Ad surface","description":"Ad integration across monetization entry points in the app.","alt":"FlipaClip ad integration."},
+                  {"src":"assets/media/flipaclip-paywall.gif","title":"Paywall","description":"Purchasely paywall activation from a native iOS product flow.","alt":"FlipaClip Purchasely paywall."}
+                ]
+              </script>
             </div>
           </article>
         </div>
@@ -334,5 +348,55 @@
         </div>
       </footer>
     </main>
+    <script>
+      document.querySelectorAll("[data-focus-carousel]").forEach((carousel) => {
+        const items = JSON.parse(carousel.querySelector("[data-carousel-items]").textContent);
+        const main = carousel.querySelector("[data-carousel-main]");
+        const previousImage = carousel.querySelector("[data-carousel-prev-image]");
+        const nextImage = carousel.querySelector("[data-carousel-next-image]");
+        const title = carousel.querySelector("[data-carousel-title]");
+        const description = carousel.querySelector("[data-carousel-description]");
+        const dots = Array.from(carousel.querySelectorAll("[data-carousel-dot]"));
+        let currentIndex = 0;
+
+        const render = () => {
+          const previousIndex = (currentIndex - 1 + items.length) % items.length;
+          const nextIndex = (currentIndex + 1) % items.length;
+          const item = items[currentIndex];
+          const previous = items[previousIndex];
+          const next = items[nextIndex];
+
+          main.src = item.src;
+          main.alt = item.alt;
+          previousImage.src = previous.src;
+          nextImage.src = next.src;
+          title.textContent = item.title;
+          description.textContent = item.description;
+
+          dots.forEach((dot, index) => {
+            dot.setAttribute("aria-current", index === currentIndex ? "true" : "false");
+          });
+        };
+
+        carousel.querySelector("[data-carousel-prev]").addEventListener("click", () => {
+          currentIndex = (currentIndex - 1 + items.length) % items.length;
+          render();
+        });
+
+        carousel.querySelector("[data-carousel-next]").addEventListener("click", () => {
+          currentIndex = (currentIndex + 1) % items.length;
+          render();
+        });
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            currentIndex = index;
+            render();
+          });
+        });
+
+        render();
+      });
+    </script>
   </body>
 </html>
